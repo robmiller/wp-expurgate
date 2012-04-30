@@ -85,7 +85,7 @@ class expurgate {
 
 		$key = '';
 
-		for ( $i = 0; $i < 250; $i++ ) {
+		for ( $i = 0; $i < 512; $i++ ) {
 			$key .= $charset[mt_rand(0, strlen($charset))];
 		}
 
