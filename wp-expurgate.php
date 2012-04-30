@@ -13,7 +13,7 @@ class expurgate {
 
 		$this->expurgate_url = plugins_url('expurgate/expurgate.php', dirname(__FILE__));
 
-		if ( 0 && $this->installed() ) {
+		if ( $this->installed() ) {
 			add_filter('the_content', array(&$this, 'convert_urls'));
 			add_filter('comment_text', array(&$this, 'convert_urls'));
 		} else {
