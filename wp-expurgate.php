@@ -11,7 +11,7 @@ class expurgate {
 		$this->cache_dir = dirname(__FILE__) . '/expurgate/cache';
 		$this->key_file  = $this->cache_dir . '/key.txt';
 
-		$this->expurgate_url = plugins_url('expurgate/expurgate.php', dirname(__FILE__));
+		$this->expurgate_url = plugins_url('expurgate/expurgate.php', __FILE__);
 
 		if ( $this->installed() ) {
 			add_filter('the_content', array(&$this, 'convert_urls'));
