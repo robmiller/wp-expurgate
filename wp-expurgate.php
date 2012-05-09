@@ -1,8 +1,11 @@
 <?php
 /*
 Plugin Name: wp-expurgate
+Plugin URI: http://digital.bigfish.co.uk/2012/04/avoiding-mixed-content-with-ssl/
+Description: Run your blog on SSL? Want to avoid mixed content warnings? Use this!
 Plugin Author: Rob Miller
-Description: Converts non-HTTPS resources to HTTPS, so you'll never see a mixed content warning again.
+Author URI: http://www.bigfish.co.uk/
+Version: 1.0
 */
 
 class expurgate {
